@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .navbar div{
