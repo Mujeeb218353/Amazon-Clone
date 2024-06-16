@@ -15,6 +15,10 @@ body {
     padding: 10px;
 }
 
+.navbar div{
+    margin: 0 2px;
+}
+
 .nav-logo img {
     height: 50px;
 }
