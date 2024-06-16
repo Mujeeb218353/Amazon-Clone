@@ -320,7 +320,7 @@ body {
 }
 
 footer {
-    background-color: #0f1111;
+    background-color: black;
     height: 200px;
     display: flex;
     flex-direction: column;
