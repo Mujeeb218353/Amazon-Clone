@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+/* navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+.border {
+    border-radius: 3px;
+}
+
+.border:hover {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1.5px solid white;
+}
+
+/* nav address */
+.nav-address {
+    height: 45px;
+    padding-top: 5px;
+}
+
+.fa-solid {
+    margin: 5px;
+}
+
+.add-1st {
+    font-size: 0.8rem;
+    color: #cccccc;
+    font-weight: 550;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.add-2nd {
+    font-weight: 550;
+    font-size: 1rem;
+    color: white;
+    padding-right: 3px;
+}
+
+/* search-bar */
+.search-bar {
+    display: flex;
+    height: 35px;
+    margin: 5px;
+    background-color: black;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.selector {
+    padding: 5px;
+    width: 33.33%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #cdcfca;
+    border: none;
+}
+
+.selector:hover {
+    background-color: #a4a6a2;
+}
+
+.selector:focus {
+    outline: none;
+}
+
+.input {
+    width: 100%;
+    border: none;
+}
+
+.input:hover {
+    background-color: #e0e0e0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.search-btn {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    font-size: 1.2rem;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #febd68;
+}
+
+.search-btn:hover {
+    background-color: #eb920e;
+}
+
+.languageSelector {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* flag-icon and language selection */
+.lang {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 2.5rem;
+}
+
+.langSelector {
+    height: 1rem;
+    width: 2.5rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.flag-icon {
+    margin: 2px;
+    height: 16.88px;
+}
+
+/* Sign In */
+.signIn {
+    height: 50px;
+}
+
+#sign-in {
+    color: rgb(223, 220, 220);
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.accounts {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.account {
+    background-color: black;
+    color: white;
+    width: 1.2rem;
+}
+
+/* Return and Account */
+.retAndOrd {
+    height: 50px;
+}
+
+.return {
+    padding-top: 10px;
+    color: rgb(223, 220, 220);
+    font-size: 12px;
+}
+
+.order {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Cart */
+.cart {
+    height: 50px;
+    font-weight: 600;
+}
+
+.image {
+    padding-top: 10px;
+}
+
+/* lower-nav-bar */
+.allItems {
+    padding-top: 5px;
+    height: 100%;
+    display: flex;
+    background-color: #0f1111;
+    color: white;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.all, .deal, .service, .registry, .gift, .sells {
+    font-weight: 550;
+    font-size: 12px;
+    padding-top: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.shopDeals {
+    position: relative;
+    left: 500px;
+    font-weight: 550;
+    font-size: 12px;
+    padding-top: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+/* back image */
+.image-back {
+    height: 400px;
+    background-image: url("./back-image.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img-msg {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+#link {
+    text-decoration: none;
+}
+
+/* shop section */
+.shop-section {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(177, 172, 157);
+}
+
+.box {
+    background-color: white;
+    padding: 5px;
+    width: 20rem;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    flex-grow: 1; 
+    margin: 10px;
+}
+
+.box:hover {
+    box-shadow: 5px 5px 10px 5px black;
+}
+
+#img1 {
+    background: url("./beauty.jpg") no-repeat center center/cover;
+}
+
+#img2 {
+    background: url("./electronic.jpg") no-repeat center center/cover;
+}
+
+#img3 {
+    background: url("./health.jpg") no-repeat center center/cover;
+}
+
+#img4 {
+    background: url("./watches.jpg") no-repeat center center/cover;
+}
+
+#img5 {
+    background: url("./fitness.jpg") no-repeat center center/cover;
+}
+
+#img6 {
+    background: url("./pet.jpg") no-repeat center center/cover;
+}
+
+#img7 {
+    background: url("./fashion.jpg") no-repeat center center/cover;
+}
+
+#img8 {
+    background: url("./home.jpg") no-repeat center center/cover;
+}
+
+.sign-in-lower {
+    background-color: rgb(241, 236, 227);
+    border: 2px whitesmoke solid;
+    height: 275px;
+}
+
+.sign-in-lower-border {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(218, 148, 19);
+    border: 2px rgb(255, 166, 0) solid;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}
+
+.start {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0f1111;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a1 {
+    color: gray;
+    text-decoration: none;
+}
+
+.copyright {
+    color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .shopDeals {
+        left: 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+    }
+
+    .shopDeals {
+        margin: 0 auto;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .add-icon {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .languageSelector, .signIn, .retAndOrd, .cart {
+        margin-top: 10px;
+    }
+
+    .image-back {
+        height: 200px;
+    }
+
+    .img-msg {
+        margin-bottom: 20px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .sign-in-lower {
+        height: auto;
+    }
+
+    .sign-in-lower-border {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .allItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .all, .deal, .service, .registry, .gift, .sells, .shopDeals {
+        margin: 10px 0;
+    }
+}
