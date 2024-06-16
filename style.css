@@ -20,7 +20,7 @@ body {
 }
 
 .border {
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .border:hover {
@@ -31,8 +31,10 @@ body {
 
 /* nav address */
 .nav-address {
-    height: 45px;
+    /* height: 45px; */
     padding-top: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .fa-solid {
@@ -191,28 +193,16 @@ body {
 
 /* lower-nav-bar */
 .allItems {
-    padding-top: 5px;
-    height: 100%;
+    padding: 0 5 10px;
     display: flex;
     background-color: #0f1111;
     color: white;
     justify-content: left;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.all, .deal, .service, .registry, .gift, .sells {
-    font-weight: 550;
-    font-size: 12px;
-    padding-top: 6px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 30px;
-    flex-shrink: 0;
-}
-
-.shopDeals {
-    position: relative;
-    left: 500px;
+.all, .deal, .service, .registry, .gift, .sells, .shopDeals{
     font-weight: 550;
     font-size: 12px;
     padding-top: 6px;
@@ -346,22 +336,10 @@ footer {
     color: gray;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .shopDeals {
-        left: 0;
-        flex-grow: 1;
-        text-align: center;
-    }
-}
 
 @media (max-width: 768px) {
     .search-bar {
         width: 100%;
-    }
-
-    .shopDeals {
-        margin: 0 auto;
     }
 
     .shop-section {
@@ -376,14 +354,11 @@ footer {
 
 @media (max-width: 480px) {
     .navbar {
-        flex-direction: column;
+        justify-content: space-evenly;
     }
-
-    .add-icon {
-        flex-direction: column;
-        align-items: flex-start;
+    .navbar div{
+        margin: 0 5px;
     }
-
     .languageSelector, .signIn, .retAndOrd, .cart {
         margin-top: 10px;
     }
@@ -397,8 +372,13 @@ footer {
     }
 
     .box {
-        width: 100%;
+        width: 90%;
         margin: 5px 0;
+    }
+
+    .allItems {
+        justify-content: space-evenly;
+        overflow: scroll;
     }
 
     .sign-in-lower {
@@ -409,13 +389,7 @@ footer {
         margin: 20px;
         padding: 20px;
     }
-
-    .allItems {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .all, .deal, .service, .registry, .gift, .sells, .shopDeals {
-        margin: 10px 0;
+        margin: 10px 5px;
     }
 }
